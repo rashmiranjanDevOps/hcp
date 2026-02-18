@@ -8,7 +8,7 @@ resource "aws_instance" "my_ec2" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Bapi-Terraform-EC2-${count.index}"
+    Name = "Bapi-Terraform-EC2-${count.index+1}"
   }
 }
 output "public_ip" {
